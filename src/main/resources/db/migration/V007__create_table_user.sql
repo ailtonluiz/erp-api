@@ -14,7 +14,7 @@ CREATE TABLE user
     address_complement   VARCHAR(60),
     address_neighborhood VARCHAR(60),
     address_phone        VARCHAR(60),
-    status               VARCHAR(10)  NOT NULL,
+    status               VARCHAR(10) DEFAULT 'ACTIVE',
 
     PRIMARY KEY (id),
 

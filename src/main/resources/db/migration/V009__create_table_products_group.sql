@@ -1,7 +1,7 @@
-CREATE TABLE `group`
+CREATE TABLE products_group
 (
     id            BIGINT      NOT NULL AUTO_INCREMENT,
-    name          VARCHAR(50) NOT NULL,
+    description   VARCHAR(50) NOT NULL,
     status        VARCHAR(10) DEFAULT 'ACTIVE',
     creation_date DATETIME    NOT NULL,
     update_date   DATETIME    NOT NULL,
