@@ -1,0 +1,9 @@
+CREATE TABLE `group`
+(
+    id     BIGINT      NOT NULL AUTO_INCREMENT,
+    name   VARCHAR(50) NOT NULL,
+    status VARCHAR(10) NOT NULL,
+
+    PRIMARY KEY (id)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = UTF8;
