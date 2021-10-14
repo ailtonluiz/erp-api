@@ -17,9 +17,12 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @EqualsAndHashCode.Include
     private Long id;
     private String firstName;
     private String lastName;
+    private String email;
+    private String password;
 
     @CreationTimestamp
     @Column(nullable = false, columnDefinition = "datetime")
@@ -41,4 +44,20 @@ public class User {
 
     @Enumerated(EnumType.STRING)
     private Status status = Status.ACTIVE;
+
+    public boolean passwordMatchesWith(String password) {
+        return getPassword().equals(password);
+    }
+
+    public boolean passwordNotMatchesWith(String password) {
+        return !passwordMatchesWith(password);
+    }
+
+    public boolean removeGroup(Group group) {
+        return getGroups().remove(group);
+    }
+
+    public boolean addGroup(Group group) {
+        return getGroups().add(group);
+    }
 }

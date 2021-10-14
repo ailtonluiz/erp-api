@@ -13,12 +13,13 @@ public class CityModel {
 
     private String name;
 
+    private StateSummaryModel state;
+
     private String status;
 
     private OffsetDateTime creationDate;
 
     private OffsetDateTime updateDate;
 
-    private StateSummaryModel state;
 
 }

@@ -9,3 +9,4 @@ CREATE TABLE user_group
     CONSTRAINT fk_user_group_user FOREIGN KEY (user_id) REFERENCES user (id)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = UTF8;
+

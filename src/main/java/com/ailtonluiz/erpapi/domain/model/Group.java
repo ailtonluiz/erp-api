@@ -40,4 +40,13 @@ public class Group {
 
     @Enumerated(EnumType.STRING)
     private Status status = Status.ACTIVE;
+
+    public boolean removePermission(Permission permission) {
+        return getPermissions().remove(permission);
+    }
+
+    public boolean addPermission(Permission permission) {
+        return getPermissions().add(permission);
+    }
+
 }

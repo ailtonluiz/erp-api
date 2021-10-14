@@ -14,4 +14,6 @@ public class StateInput {
 
     @NotBlank
     private String shortName;
+
+    private String status;
 }

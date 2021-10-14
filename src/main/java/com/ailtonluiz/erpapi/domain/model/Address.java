@@ -23,8 +23,8 @@ public class Address {
     @Column(name = "address_complement")
     private String complement;
 
-    @Column(name = "address_neighborhood")
-    private String neighborhood;
+    @Column(name = "address_district")
+    private String district;
 
 
     @ManyToOne(fetch = FetchType.LAZY)
