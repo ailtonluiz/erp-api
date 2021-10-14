@@ -58,7 +58,7 @@ INSERT INTO city (id, name, state_id, status, creation_date, update_date) VALUES
 (6, 'Rio Branco', 6,'ACTIVE',utc_timestamp -10000, utc_timestamp +10000);
 
 # INSERT payment_methods
-INSERT INTO payment_method (id, description, status, create_date, update_date) VALUES
+INSERT INTO payment_method (id, description, status, creation_date, update_date) VALUES
 (1, 'Dinheiro', 'ACTIVE', utc_timestamp -10000, utc_timestamp +10000),
 (2, 'Cartão de crédito', 'ACTIVE', utc_timestamp -10000, utc_timestamp +10000),
 (3, 'Cartão de débito', 'ACTIVE', utc_timestamp -10000, utc_timestamp +10000),
