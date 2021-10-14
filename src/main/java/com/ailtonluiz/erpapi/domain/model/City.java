@@ -37,7 +37,7 @@ public class City {
 
     @CreationTimestamp
     @Column(nullable = false, columnDefinition = "datetime")
-    private OffsetDateTime registerDate;
+    private OffsetDateTime creationDate;
 
     @UpdateTimestamp
     @Column(nullable = false, columnDefinition = "datetime")
