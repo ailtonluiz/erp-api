@@ -19,6 +19,7 @@ DELETE FROM user;
 DELETE FROM user_group;
 
 SET FOREIGN_KEY_CHECKS = 1;
+
 # ALTER TABLE TO AUTO_INCREMENT = 1
 ALTER TABLE brand             AUTO_INCREMENT = 1;
 ALTER TABLE city              AUTO_INCREMENT = 1;
@@ -54,7 +55,7 @@ VALUES (6, 'Acre', 'AC', 'ACTIVE', utc_timestamp -10000, utc_timestamp +10000);
 
 #  INSERT cities
 INSERT INTO city (id, name, state_id, status, creation_date, update_date)
-VALUES (1,'Goiânia',1,'ACTIVE',utc_timestamp -10000, utc_timestamp +10000);
+VALUES (1,'Goiânia',1,'ACTIVE',utc_timestamp -1000000, utc_timestamp +10000);
 INSERT INTO city (id, name, state_id, status, creation_date, update_date)
 VALUES (2, 'Santos', 2,'ACTIVE',utc_timestamp -10000, utc_timestamp +10000);
 INSERT INTO city (id, name, state_id, status, creation_date, update_date)

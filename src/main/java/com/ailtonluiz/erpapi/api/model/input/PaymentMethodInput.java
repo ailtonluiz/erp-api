@@ -1,0 +1,14 @@
+package com.ailtonluiz.erpapi.api.model.input;
+
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.validation.constraints.NotBlank;
+
+@Setter
+@Getter
+public class PaymentMethodInput {
+
+    @NotBlank
+    private String description;
+}
