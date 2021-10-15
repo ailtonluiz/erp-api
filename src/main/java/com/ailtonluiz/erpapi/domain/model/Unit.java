@@ -32,4 +32,13 @@ public class Unit {
     @UpdateTimestamp
     @Column(nullable = false, columnDefinition = "datetime")
     private OffsetDateTime updateDate;
+
+    @PrePersist
+    @PreUpdate
+    private void prePersistUpdate() {
+
+        description = description.toUpperCase();
+        shortDescription = shortDescription.toUpperCase();
+
+    }
 }

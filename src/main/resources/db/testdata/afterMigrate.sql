@@ -96,4 +96,12 @@ INSERT INTO user_group (user_id, group_id) VALUES
 (1, 2),
 (2, 2);
 
+# INSERT unit
+
+INSERT INTO unit (id, description, short_description, status, creation_date, update_date) VALUES
+(1,'UNIDADE', 'UND','ACTIVE', utc_timestamp -100000, utc_timestamp +1000),
+(2,'CAIXA', 'CX','ACTIVE', utc_timestamp -100000, utc_timestamp +1000),
+(3,'METRO', 'MT','ACTIVE', utc_timestamp -100000, utc_timestamp +1000),
+(4,'LITRO', 'LT','ACTIVE', utc_timestamp -100000, utc_timestamp +1000);
+
 
